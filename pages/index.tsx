@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Enudrance Finance</title>
+        <title>Fusion DAO</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
