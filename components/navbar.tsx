@@ -15,7 +15,7 @@ export const Navbar = () => {
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <span className='text-xl text-white font-bold uppercase tracking-wide'>
-              WTFinance
+              Fusion DAO
             </span>
           </a>
         </Link>

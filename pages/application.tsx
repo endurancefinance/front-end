@@ -9,9 +9,13 @@ const Application: NextPage = () => {
   return (
     <div>
       <Navbar />
+
       <div>
        <ButtonMetamaskComponent/>
       </div>
+      
+      <main> <h1>Home Page</h1> </main>
+      <footer><p>Footer</p></footer>
     </div>
   )
 }
