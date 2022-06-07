@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { useState } from "react";
+import { Web3Button } from "./Web3Button";
 
 export const Navbar = () => {
 
@@ -23,32 +24,13 @@ export const Navbar = () => {
           className=' inline-flex p-3 hover:bg-blue-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
           onClick={handleClick}
         >
-          <svg
-            className='w-6 h-6'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M4 6h16M4 12h16M4 18h16'
-            />
-          </svg>
         </button>
+
+
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-        <div
-          className={`${active ? '' : 'hidden'
-            }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
-        >
+        <div className='w-full lg:inline-flex lg:flex-grow lg:w-auto' >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-            <Link href='/application'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-600 hover:text-white '>
-                Connect Wallet
-              </a>
-            </Link>
+            <Web3Button/>
           </div>
         </div>
       </nav>
